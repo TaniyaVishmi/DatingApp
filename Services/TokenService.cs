@@ -3,8 +3,8 @@ using System.Security.Claims;
 using System.Text;
 using API.Entities;
 using API.Interfaces;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
+//using Microsoft.AspNetCore.Identity;
+//using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 //using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
 
@@ -13,8 +13,8 @@ namespace API.Services
   public class TokenService : ITokenService
   {
     private readonly SymmetricSecurityKey _key;
-    private DateTime Expires;
-    private SigningCredentials SigningCredentials;
+    //private DateTime Expires;
+    //private SigningCredentials SigningCredentials;
 
     public TokenService(IConfiguration config)
     {
